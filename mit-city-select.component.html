@@ -1,0 +1,24 @@
+<div class="mit-city-select">
+  <div class="select" (click)="isExpand = !isExpand">
+    <input type="text" placeholder="选择所在地区" [(ngModel)]="selected" [disabled]="true">
+  </div>
+  <div class="list-menu" *ngIf="isExpand">
+    <div class="sub-list">
+      <ul>
+        <li *ngFor="let item of list | mitCitySelect" (click)="provinceId = item.value;provinceName = item.name;cityId = undefined"
+          [class.active]="item.value === provinceId">{{item.name}}</li>
+      </ul>
+    </div>
+    <div class="sub-list" *ngIf="provinceId">
+      <ul>
+        <li *ngFor="let item of list | mitCitySelect:provinceId" (click)="cityId = item.value;cityName = item.name;" [class.active]="item.value === cityId">{{item.name}}</li>
+      </ul>
+    </div>
+    <div class="sub-list" *ngIf="cityId">
+      <ul>
+        <li *ngFor="let item of list | mitCitySelect:cityId" (click)="districtId = item.value;districtName = item.name;selectHandle(provinceName,cityName,districtName);"
+          [class.active]="item.value === districtId">{{item.name}}</li>
+      </ul>
+    </div>
+  </div>
+</div>

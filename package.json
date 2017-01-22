@@ -1,0 +1,24 @@
+{
+  "name": "mit-city-select",
+  "version": "0.1.0",
+  "description": "angular2 省市区三级联动组件",
+  "main": "mit-city-select.module.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zjcboy/mit-city-select.git"
+  },
+  "keywords": [
+    "angular2",
+    "省市区",
+    "三级联动"
+  ],
+  "author": "Junchao Zheng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zjcboy/mit-city-select/issues"
+  },
+  "homepage": "https://github.com/zjcboy/mit-city-select#readme"
+}
