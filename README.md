@@ -1,7 +1,9 @@
 # mit-city-select
 基于angular2的省市区三级联动组件
 
-# 使用方式
+![gif](https://cloud.githubusercontent.com/assets/8294751/22183022/afbdcdee-e0ee-11e6-8e6b-ac6a7c2b1da3.gif)
+
+## 使用方式
 
 ### 1. Intstall
 ```bash
@@ -35,7 +37,7 @@
 ```
  
 
-# Environment
+## Environment
 ```
 angular-cli: 1.0.0-beta.25.5
 node: 7.2.1
