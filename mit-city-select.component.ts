@@ -23,7 +23,6 @@ export class MitCitySelectComponent implements OnInit {
   selectHandle( province: IMitAddress, city: IMitAddress, district: IMitAddress ) {
     this.isExpand = false;
     this.selected = province + '/' + city + '/' + district;
-    this.result.emit( this.selected );
   }
 
 
