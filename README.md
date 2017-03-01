@@ -17,7 +17,7 @@
     @NgModule({
         declarations: [],
         imports: [
-            MitBaiduMapModule
+            MitSelectModule
     ]
     })
     export class BusinessModule { };
@@ -30,6 +30,7 @@
 
 ### 4. Over
 ```
+	注意：如果使用插件数据，请将插件中的china_address.json文件放到项目根路径；
     citySelect(e){
           // 结果
         console.log(e)
